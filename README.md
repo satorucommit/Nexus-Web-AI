@@ -38,7 +38,6 @@ Our mission is to demystify AI technology and make it accessible, understandable
 ## 🛠 Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Build Tool**: Vite
 - **Styling**: Custom CSS with variables and animations
 - **Animation Libraries**: Native JavaScript animations
 - **Responsive Design**: CSS Flexbox and Grid
@@ -84,24 +83,7 @@ yarn dev
 
 Visit `http://localhost:5173` in your browser to view the application.
 
-### Build for Production
 
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-### Preview Production Build
-
-To preview the production build locally:
-
-```bash
-npm run preview
-# or
-yarn preview
 ```
 
 ## 📁 Project Structure
@@ -149,7 +131,6 @@ Project Link: [https://github.com/your-username/neuralnexus-ai](https://github.c
 
 ## 🙏 Acknowledgements
 
-- [Vite](https://vitejs.dev/) - Next generation frontend tooling
 - [Pexels](https://pexels.com/) - High-quality free stock photos
 - All contributors and AI researchers who inspired this project
 
