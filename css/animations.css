@@ -1,0 +1,232 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Reveal animation for scrolling */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll animation for mouse wheel */
+@keyframes scroll {
+  0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(15px); }
+}
+
+/* Float animation for scroll indicator */
+@keyframes float {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* Enhanced float animation */
+@keyframes floatEnhanced {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Typing animation for chatbot */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--color-primary-500);
+  animation: 
+    typing 1.5s steps(30, end),
+    blink 0.75s step-end infinite;
+}
+
+/* Pulse animation for AI brain */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pulse {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+/* Node connection animation */
+@keyframes connect {
+  0% { stroke-dashoffset: 100; }
+  100% { stroke-dashoffset: 0; }
+}
+
+/* Node appearing animation */
+@keyframes appear {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.node {
+  animation: appear 0.5s ease forwards;
+  transform-origin: center;
+}
+
+.connection {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: connect 1.5s ease forwards;
+}
+
+/* Count up animation for stats */
+@keyframes countUp {
+  from { content: attr(data-value); }
+  to { content: attr(data-value); }
+}
+
+/* Button press animation */
+@keyframes buttonPress {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+.btn:active {
+  animation: buttonPress 0.2s ease;
+}
+
+/* Enhanced dot pulse animation */
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(0.7); opacity: 0.7; }
+  50% { transform: scale(1); opacity: 1; }
+}
+
+/* Glow animation */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(10, 132, 255, 0.5); }
+  50% { box-shadow: 0 0 15px rgba(10, 132, 255, 0.8); }
+}
+
+/* Fade in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-20px); }
+  60% { transform: translateX(-50%) translateY(-10px); }
+}
+
+/* Logo pulse animation */
+@keyframes logoPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Footer gradient animation */
+@keyframes footerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Continuous card floating */
+@keyframes cardFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Continuous timeline pulse */
+@keyframes timelinePulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(10, 132, 255, 0); }
+  50% { transform: scale(1.02); box-shadow: 0 0 15px rgba(10, 132, 255, 0.3); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(10, 132, 255, 0); }
+}
+
+/* Timeline line movement */
+@keyframes moveLine {
+  0% { transform: translateX(-50%) translateY(0); }
+  25% { transform: translateX(-50%) translateY(10px); }
+  50% { transform: translateX(-50%) translateY(0); }
+  75% { transform: translateX(-50%) translateY(-10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* Enhanced reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal for cards */
+.card.reveal {
+  transition-delay: 0.1s;
+}
+
+.card.reveal.delay-1 {
+  transition-delay: 0.3s;
+}
+
+.card.reveal.delay-2 {
+  transition-delay: 0.5s;
+}
+
+.card.reveal.delay-3 {
+  transition-delay: 0.7s;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 132, 255, 0.4);
+}
