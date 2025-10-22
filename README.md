@@ -41,74 +41,73 @@ Our mission is to demystify AI technology and make it accessible, understandable
 - **Styling**: Custom CSS with variables and animations
 - **Animation Libraries**: Native JavaScript animations
 - **Responsive Design**: CSS Flexbox and Grid
-- **Deployment**: Static site hosting ready
 
 ## 🚀 Installation
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+- A modern web browser
+- A local server environment (optional but recommended)
 
-### Steps
+### Options
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/neuralnexus-ai.git
-   ```
+#### Option 1: Direct Browser Access
+1. Clone or download the repository
+2. Open `index.html` directly in your browser
 
-2. Navigate to the project directory:
-   ```bash
-   cd neuralnexus-ai
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+#### Option 2: Local Server (Recommended)
+1. Clone or download the repository
+2. Serve the project folder using any local server:
+   - **VS Code Live Server**: Right-click `index.html` and select "Open with Live Server"
+   - **Python**: Run `python -m http.server 8000` in the project directory
+   - **Node.js**: Use `npx serve .` in the project directory
 
 ## ▶️ Usage
 
-### Development Server
+### Running the Project
 
-To start the development server with hot reloading:
+1. **Development**: Simply open `index.html` in your browser or serve with a local server
+2. **Navigation**: Use the menu to explore different sections (Home, Features, Timeline, AI Chat, About, Services, Solutions, Resources)
+3. **Theme Toggle**: Switch between light and dark modes using the button in the top navigation
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Pages Included
 
-Visit `http://localhost:5173` in your browser to view the application.
-
-
-```
+- `index.html` - Main landing page with hero section, features, timeline, and chatbot
+- `about.html` - Information about NeuralNexus and team
+- `services.html` - AI services offered
+- `solutions.html` - Industry-specific AI solutions
+- `resources.html` - Educational materials and research
 
 ## 📁 Project Structure
 
 ```
 neuralnexus-ai/
+│
 ├── css/
-│   ├── animations.css     # Custom animations
+│   ├── animations.css     # Custom animations and transitions
 │   ├── responsive.css     # Responsive design breakpoints
 │   ├── style.css          # Main stylesheet
 │   └── variables.css      # CSS variables and theme definitions
+│
 ├── js/
-│   ├── aiLogoAnimation.js # AI logo particle animation
-│   ├── animations.js      # Scroll and element animations
-│   ├── chatbot.js         # AI chatbot functionality
+│   ├── aiLogoAnimation.js # AI logo particle animation in hero section
+│   ├── animations.js      # Scroll animations and element transitions
+│   ├── chatbot.js         # AI chatbot functionality and responses
 │   ├── main.js            # Main application initialization
-│   ├── themeSwitcher.js   # Dark/light theme toggle
-│   └── utils.js           # Utility functions
+│   ├── themeSwitcher.js   # Dark/light theme toggle functionality
+│   └── utils.js           # Utility functions for common operations
+│
 ├── index.html             # Main landing page
 ├── about.html             # About page
 ├── services.html          # Services page
 ├── solutions.html         # Solutions page
 ├── resources.html         # Resources page
-├── package.json           # Project dependencies and scripts
-└── README.md              # This file
+│
+├── images/                # Static images and assets
+│   └── *.jpg/png/svg      # Image files
+│
+├── favicon.ico            # Website favicon
+└── README.md              # Project documentation
 ```
 
 ## 🤝 Contributing
